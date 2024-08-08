@@ -44,6 +44,8 @@ def truncate(text, length):
         return text
 
 @app.route('/', methods=['GET', 'POST'])
+
+
 def index():
     if request.method == 'POST':
         calories = float(request.form['calories'])
